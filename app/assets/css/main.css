@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Componentes personalizados usando o esquema de cores */
+@layer components {
+  /* Botões com gradientes */
+  .btn-primary {
+    @apply bg-gradient-primary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-primary-lg hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-gradient-secondary text-primary-950 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-secondary-lg hover:scale-105;
+  }
+  
+  .btn-outline-primary {
+    @apply border-2 border-primary-950 text-primary-950 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-primary-950 hover:text-white;
+  }
+  
+  .btn-outline-secondary {
+    @apply border-2 border-secondary-500 text-secondary-500 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-secondary-500 hover:text-primary-950;
+  }
+  
+  /* Cards com gradientes */
+  .card-primary {
+    @apply bg-gradient-subtle-primary backdrop-blur-sm border border-primary-800/20 rounded-xl p-6 shadow-primary-lg;
+  }
+  
+  .card-secondary {
+    @apply bg-gradient-subtle-secondary backdrop-blur-sm border border-secondary-400/20 rounded-xl p-6 shadow-secondary-lg;
+  }
+  
+  .card-glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-xl;
+  }
+  
+  /* Seções hero */
+  .hero-section {
+    @apply bg-gradient-hero min-h-screen flex items-center justify-center text-white;
+  }
+  
+  .hero-section-reverse {
+    @apply bg-gradient-hero-reverse min-h-screen flex items-center justify-center text-white;
+  }
+  
+  /* Textos com gradientes */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary-950 to-primary-700 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-secondary {
+    @apply bg-gradient-to-r from-secondary-500 to-secondary-700 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-hero {
+    @apply bg-gradient-to-r from-primary-950 via-primary-700 to-secondary-500 bg-clip-text text-transparent;
+  }
+  
+  /* Overlays */
+  .overlay-dark {
+    @apply bg-gradient-overlay-dark;
+  }
+  
+  .overlay-light {
+    @apply bg-gradient-overlay-light;
+  }
+  
+  /* Animações de gradiente */
+  .gradient-animated {
+    @apply bg-gradient-animated animate-gradient;
+    background-size: 400% 400%;
+  }
+  
+  /* Estados de loading */
+  .loading-primary {
+    @apply bg-primary-200 animate-pulse;
+  }
+  
+  .loading-secondary {
+    @apply bg-secondary-200 animate-pulse;
+  }
+  
+  /* Bordas com gradientes */
+  .border-gradient-primary {
+    @apply border-2 border-transparent bg-gradient-to-r from-primary-950 to-primary-700 bg-clip-border;
+  }
+  
+  .border-gradient-secondary {
+    @apply border-2 border-transparent bg-gradient-to-r from-secondary-500 to-secondary-700 bg-clip-border;
+  }
+}
+
+/* Utilitários personalizados */
+@layer utilities {
+  /* Scrollbar personalizada */
+  .scrollbar-primary::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollbar-primary::-webkit-scrollbar-track {
+    @apply bg-neutral-100;
+  }
+  
+  .scrollbar-primary::-webkit-scrollbar-thumb {
+    @apply bg-primary-500 rounded-full;
+  }
+  
+  .scrollbar-primary::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-600;
+  }
+  
+  /* Seleção de texto personalizada */
+  .selection-primary ::selection {
+    @apply bg-primary-500/20 text-primary-950;
+  }
+  
+  .selection-secondary ::selection {
+    @apply bg-secondary-500/20 text-secondary-950;
+  }
+  
+  /* Foco personalizado */
+  .focus-primary:focus {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+  }
+  
+  .focus-secondary:focus {
+    @apply outline-none ring-2 ring-secondary-500 ring-offset-2;
+  }
+}
+
+/* Variáveis CSS customizadas para uso em JavaScript */
+:root {
+  --color-primary: #020617;
+  --color-secondary: #00DC82;
+  --color-primary-rgb: 2, 6, 23;
+  --color-secondary-rgb: 0, 220, 130;
+}

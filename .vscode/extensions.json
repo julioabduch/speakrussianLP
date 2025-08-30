@@ -1,0 +1,43 @@
+{
+  "recommendations": [
+    // Vue.js development
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    
+    // Nuxt.js
+    "Nuxt.mdc",
+    
+    // Code formatting and linting
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    
+    // Tailwind CSS
+    "bradlc.vscode-tailwindcss",
+    
+    // TypeScript
+    "ms-vscode.vscode-typescript-next",
+    
+    // Git
+    "eamodio.gitlens",
+    
+    // Productivity
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-json",
+    
+    // Markdown
+    "yzhang.markdown-all-in-one",
+    
+    // Color themes (optional)
+    "GitHub.github-vscode-theme",
+    "PKief.material-icon-theme"
+  ],
+  
+  "unwantedRecommendations": [
+    // Conflicting Vue extensions
+    "octref.vetur",
+    "johnsoncodehk.vscode-typescript-vue-plugin-pack"
+  ]
+}

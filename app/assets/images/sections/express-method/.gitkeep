@@ -1,0 +1,13 @@
+# Pasta para imagens da seção Método Expresso
+
+## Estrutura recomendada:
+- hero-image.jpg/webp - Imagem principal da seção
+- step-1.svg - Ícone/ilustração do passo 1
+- step-2.svg - Ícone/ilustração do passo 2
+- step-3.svg - Ícone/ilustração do passo 3
+- diagram.svg - Diagramas explicativos
+
+## Como usar no componente:
+```vue
+<img src="~/assets/images/sections/express-method/hero-image.jpg" alt="Método Expresso" />
+```

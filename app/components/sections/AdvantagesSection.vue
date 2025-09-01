@@ -57,6 +57,11 @@
           icon="lightning"
         />
       </div>
+      
+      <!-- Call to Action -->
+      <div class="text-center mt-16">
+        <ActionButton text="Comprar Agora" />
+      </div>
     </div>
   </section>
 </template>
@@ -64,6 +69,7 @@
 <script setup>
 import Badge from '~/components/Badge.vue'
 import Card from '~/components/Card.vue'
+import ActionButton from '~/components/ActionButton.vue'
 
 // Configurações do componente
 defineOptions({

@@ -1,12 +1,13 @@
 <template>
   <div>
     <HeroSection />
-    <ExpressMethodSection />
     <TraditionalMethodSection />
     <NewMethodSection />
     <AdvantagesSection />
     <CourseContentSection />
+    <ExpressMethodSection />
     <TestimonialsSection />
+    <CheckoutSection />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import NewMethodSection from '~/components/sections/NewMethodSection.vue'
 import AdvantagesSection from '~/components/sections/AdvantagesSection.vue'
 import CourseContentSection from '~/components/sections/CourseContentSection.vue'
 import TestimonialsSection from '~/components/sections/TestimonialsSection.vue'
+import CheckoutSection from '~/components/sections/CheckoutSection.vue'
 
 // Configurações da página
 useHead({

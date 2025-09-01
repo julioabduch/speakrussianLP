@@ -5,11 +5,11 @@
       <div class="absolute top-20 left-10 w-72 h-72 bg-secondary-500 rounded-full blur-3xl"></div>
       <div class="absolute bottom-20 right-10 w-96 h-96 bg-primary-400 rounded-full blur-3xl"></div>
     </div>
-    
+
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Header -->
       <div class="text-center mb-16">
-        <Badge class="mb-6">Conteúdo do Curso</Badge>
+        <Badge text="Conteúdo do Curso" class="mb-6" />
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
           O que você vai <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary-400 to-primary-400">aprender</span>
         </h2>
@@ -67,7 +67,7 @@ const courseTopics = [
     modules: [
       {
         title: 'Trechos Selecionados',
-        description: 'Fragmentos cuidadosamente escolhidos das melhores séries russas'
+        description: 'Fragmentos cuidadosamente escolhidos das melhores séries '
       },
       {
         title: 'Método de Repetição',

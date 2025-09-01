@@ -23,10 +23,7 @@
       </div>
       
       <!-- Seta de Expansão -->
-      <div class="flex items-center space-x-2">
-        <span v-if="modules && modules.length" class="text-xs text-secondary-400 font-medium">
-          {{ modules.length }} {{ modules.length === 1 ? 'módulo' : 'módulos' }}
-        </span>
+      <div class="flex items-center">
         <svg 
           :class="['w-5 h-5 text-white/60 transition-transform duration-300', { 'rotate-180': isExpanded }]"
           fill="none" 

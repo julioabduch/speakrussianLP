@@ -6,6 +6,7 @@
     <NewMethodSection />
     <AdvantagesSection />
     <CourseContentSection />
+    <TestimonialsSection />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import TraditionalMethodSection from '~/components/sections/TraditionalMethodSec
 import NewMethodSection from '~/components/sections/NewMethodSection.vue'
 import AdvantagesSection from '~/components/sections/AdvantagesSection.vue'
 import CourseContentSection from '~/components/sections/CourseContentSection.vue'
+import TestimonialsSection from '~/components/sections/TestimonialsSection.vue'
 
 // Configurações da página
 useHead({

@@ -8,6 +8,8 @@
     <ExpressMethodSection />
     <TestimonialsSection />
     <CheckoutSection />
+    <FAQSection />
+    <FooterSection />
   </div>
 </template>
 
@@ -20,6 +22,8 @@ import AdvantagesSection from '~/components/sections/AdvantagesSection.vue'
 import CourseContentSection from '~/components/sections/CourseContentSection.vue'
 import TestimonialsSection from '~/components/sections/TestimonialsSection.vue'
 import CheckoutSection from '~/components/sections/CheckoutSection.vue'
+import FAQSection from '~/components/sections/FAQSection.vue'
+import FooterSection from '~/components/sections/FooterSection.vue'
 
 // Configurações da página
 useHead({

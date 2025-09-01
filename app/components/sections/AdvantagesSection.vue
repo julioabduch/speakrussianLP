@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 lg:py-24 bg-gradient-hero relative overflow-hidden">
+  <section id="advantages" class="py-16 lg:py-24 bg-gradient-hero relative overflow-hidden">
     <!-- Background decorative elements -->
     <div class="absolute inset-0 opacity-10">
       <div class="absolute top-20 left-10 w-72 h-72 bg-secondary-500 rounded-full blur-3xl"></div>
@@ -60,7 +60,7 @@
       
       <!-- Call to Action -->
       <div class="text-center mt-16">
-        <ActionButton text="Comprar Agora" />
+        <ActionButton text="Comprar Agora" href="#checkout" />
       </div>
     </div>
   </section>

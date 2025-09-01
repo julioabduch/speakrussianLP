@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-screen bg-gradient-hero py-20 overflow-hidden">
+  <section id="faq" class="relative min-h-screen bg-gradient-hero py-20 overflow-hidden">
     <!-- Background decorativo -->
     <div class="absolute inset-0 opacity-10">
       <div class="absolute top-20 left-10 w-72 h-72 bg-secondary-500 rounded-full blur-3xl"></div>
@@ -90,7 +90,7 @@
         </p>
         <ActionButton 
           text="Começar Agora" 
-          @click="scrollToCheckout"
+          href="#checkout"
         />
       </div>
     </div>
@@ -102,13 +102,7 @@ import FAQItem from '~/components/ui/FAQItem.vue'
 import Badge from '~/components/Badge.vue'
 import ActionButton from '~/components/ActionButton.vue'
 
-// Método para rolar até a seção de checkout
-const scrollToCheckout = () => {
-  const checkoutSection = document.querySelector('.checkout-section')
-  if (checkoutSection) {
-    checkoutSection.scrollIntoView({ behavior: 'smooth' })
-  }
-}
+
 
 // Configurações do componente
 defineOptions({

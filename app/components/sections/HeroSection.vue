@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
+  <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
     <!-- Background decorative elements -->
     <div class="absolute inset-0 opacity-10">
       <div class="absolute top-20 left-10 w-72 h-72 bg-secondary-500 rounded-full blur-3xl"></div>
@@ -33,7 +33,7 @@
       
       <!-- Action Button -->
       <div class="mb-16">
-        <ActionButton text="Começar Agora" />
+        <ActionButton text="Começar Agora" href="#checkout" />
       </div>
     </div>
   </section>

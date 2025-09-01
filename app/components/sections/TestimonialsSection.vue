@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-20 overflow-hidden bg-gradient-hero">
+  <section id="testimonials" class="relative py-20 overflow-hidden bg-gradient-hero">
     <!-- Background decorative elements -->
     <div class="absolute inset-0 opacity-10">
       <div class="absolute top-20 left-10 w-72 h-72 bg-secondary-500 rounded-full blur-3xl"></div>

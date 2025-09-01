@@ -40,7 +40,23 @@
     </div>
 
     <!-- Botão de compra -->
+    <a 
+      v-if="purchaseUrl"
+      :href="purchaseUrl"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="w-full bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl group-hover:shadow-primary-500/25 relative overflow-hidden block text-center"
+    >
+      <div class="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+      <span class="relative flex items-center justify-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5 6m0 0h9M17 13v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6"></path>
+        </svg>
+        Comprar Agora
+      </span>
+    </a>
     <button 
+      v-else
       @click="$emit('purchase', { plan: title, price: promotionalPrice })"
       class="w-full bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl group-hover:shadow-primary-500/25 relative overflow-hidden"
     >
@@ -98,6 +114,10 @@ defineProps({
   isPopular: {
     type: Boolean,
     default: false
+  },
+  purchaseUrl: {
+    type: String,
+    default: null
   }
 })
 

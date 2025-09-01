@@ -39,15 +39,19 @@
 
 <script setup>
 // Props do componente
-defineProps({
+const props = defineProps({
   text: {
     type: String,
     required: true
+  },
+  href: {
+    type: String,
+    default: null
   }
 })
 
 // Emits
-defineEmits(['click'])
+const emit = defineEmits(['click'])
 
 // Configurações do componente
 defineOptions({
@@ -56,8 +60,19 @@ defineOptions({
 
 // Handlers
 const handleClick = () => {
-  // Aqui pode ser adicionada lógica específica do botão
-  // Por exemplo, scroll para seção de preços, abrir modal, etc.
+  // Se há um href, fazer scroll suave para o elemento
+  if (props.href) {
+    const element = document.querySelector(props.href)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+  
+  // Emitir evento de click
+  emit('click')
 }
 </script>
 

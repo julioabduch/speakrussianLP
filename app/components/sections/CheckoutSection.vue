@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-screen bg-gradient-hero py-20 overflow-hidden">
+  <section id="checkout" class="relative min-h-screen bg-gradient-hero py-20 overflow-hidden">
     <!-- Background decorativo -->
     <div class="absolute inset-0 opacity-10">
       <div class="absolute top-20 left-10 w-72 h-72 bg-secondary-500 rounded-full blur-3xl"></div>
@@ -12,14 +12,14 @@
         <div class="mb-6">
           <Badge text="Escolha seu Plano" />
         </div>
-        
+
         <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
           Comece sua Jornada no
           <span class="text-secondary-400">
             Russo Hoje
           </span>
         </h2>
-        
+
         <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
           Escolha o plano ideal para você e transforme sua vida com o domínio do idioma russo
         </p>
@@ -37,12 +37,13 @@
           payment-info="Pagamento único"
           :features="[
             'Acesso completo ao curso por 1 ano',
-            'Mais de 50 aulas em vídeo HD',
+            'Mais de 500 aulas ',
             'Material didático em PDF',
             'Exercícios práticos interativos',
             'Certificado de conclusão',
             'Acesso via computador e celular'
           ]"
+          purchase-url="https://pay.speakrussian.net/?add-to-cart=382&_gl=1%2A98v15%2A_ga%2AMTIzNDAwOTM5NC4xNzU2Njc4NDUz%2A_ga_RG9L4ND7YT%2AczE3NTY3MzM2NjMkbzIkZzEkdDE3NTY3MzM2NjkkajU0JGwwJGgw%2A_gcl_au%2AMTYwODc3MjQzLjE3NTU4MjEwNzc."
           @purchase="handlePurchase"
         />
 
@@ -59,12 +60,11 @@
             'Todas as atualizações futuras GRÁTIS',
             'Suporte direto via WhatsApp',
             'Aulas bônus exclusivas',
-            'Grupo VIP de alunos no Telegram',
-            'Sessões de conversação ao vivo',
-            'Material extra: áudios nativos',
+            'Aulas particulares com custo extra ',
             'Prioridade no atendimento'
           ]"
           :is-popular="true"
+          purchase-url="https://pay.speakrussian.net/?add-to-cart=382&_gl=1%2A98v15%2A_ga%2AMTIzNDAwOTM5NC4xNzU2Njc4NDUz%2A_ga_RG9L4ND7YT%2AczE3NTY3MzM2NjMkbzIkZzEkdDE3NTY3MzM2NjkkajU0JGwwJGgw%2A_gcl_au%2AMTYwODc3MjQzLjE3NTU4MjEwNzc."
           @purchase="handlePurchase"
         />
       </div>

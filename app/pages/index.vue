@@ -3,6 +3,9 @@
     <HeroSection />
     <ExpressMethodSection />
     <TraditionalMethodSection />
+    <NewMethodSection />
+    <AdvantagesSection />
+    <CourseContentSection />
   </div>
 </template>
 
@@ -10,6 +13,9 @@
 import HeroSection from '~/components/sections/HeroSection.vue'
 import ExpressMethodSection from '~/components/sections/ExpressMethodSection.vue'
 import TraditionalMethodSection from '~/components/sections/TraditionalMethodSection.vue'
+import NewMethodSection from '~/components/sections/NewMethodSection.vue'
+import AdvantagesSection from '~/components/sections/AdvantagesSection.vue'
+import CourseContentSection from '~/components/sections/CourseContentSection.vue'
 
 // Configurações da página
 useHead({

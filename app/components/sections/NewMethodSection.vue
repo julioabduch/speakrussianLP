@@ -12,35 +12,39 @@
         <div class="space-y-6">
           <!-- Badge -->
           <div class="mb-6">
-            <Badge text="Método Tradicional" />
+            <Badge text="Método Novo" />
           </div>
           
           <!-- Título -->
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
             <span class="text-secondary-400">
-              Estuda por anos, mas não consegue se comunicar?
+              O caminho natural para aprender de verdade
             </span>
           </h2>
           
           <!-- Subtítulo -->
-          <p class="text-xl sm:text-2xl text-white/90 leading-relaxed">
-            Compare nosso método revolucionário com os cursos tradicionais e veja a diferença na velocidade de aprendizado e retenção do conhecimento.
-          </p>
+          <div class="space-y-4">
+            <p class="text-xl sm:text-2xl text-white/90 leading-relaxed">
+              Descubra nossa abordagem inovadora que combina tecnologia avançada com técnicas comprovadas para acelerar seu aprendizado do russo de forma eficiente e duradoura.
+            </p>
+            <p class="text-xl sm:text-2xl text-white/90 leading-relaxed">
+              Tudo que você faz bem hoje — dirigir, cozinhar, escrever, usar tecnologia — você aprendeu repetindo, passo a passo, dominando uma etapa antes de começar a outra.
+            </p>
+            <p class="text-xl sm:text-2xl text-white/90 leading-relaxed">
+              Com nosso método de repetição continuada, você fixa o conhecimento de forma sólida e progressiva, garantindo resultados reais rumo à fluência.
+            </p>
+          </div>
         </div>
         
         <!-- Coluna da Direita - Imagem -->
         <div class="flex justify-center lg:justify-end">
           <div class="w-full max-w-md lg:max-w-lg xl:max-w-xl">
-            <!-- Imagem do método tradicional -->
-            <div class="relative group">
-              <img 
-                src="~/assets/images/sections/traditional-method/traditional2.png" 
-                alt="Método tradicional de ensino de idiomas"
-                class="w-full h-auto rounded-2xl shadow-2xl transition-transform duration-300 group-hover:scale-105"
-              />
-              <!-- Overlay decorativo -->
-              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
+            <!-- Imagem do método novo -->
+            <img 
+              src="~/assets/images/sections/new-method/novo.webp" 
+              alt="Método da Repetição Continuada - Seu atalho para fluência" 
+              class="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 border border-white/10"
+            />
           </div>
         </div>
       </div>
@@ -53,7 +57,7 @@ import Badge from '~/components/Badge.vue'
 
 // Configurações do componente
 defineOptions({
-  name: 'TraditionalMethodSection'
+  name: 'NewMethodSection'
 })
 </script>
 

@@ -1,0 +1,32 @@
+# Pasta para imagens da seção New Method
+
+## Estrutura de arquivos recomendada:
+- main-image.jpg/png/webp - Imagem principal da seção
+- innovation-graphic.jpg/png/webp - Gráfico de inovação (se necessário)
+- icons/ - Ícones específicos da seção
+- backgrounds/ - Imagens de fundo específicas
+
+## Convenções de nomenclatura:
+- Use kebab-case (palavras separadas por hífen)
+- Seja descritivo: new-method-illustration.jpg
+- Inclua dimensões se relevante: hero-image-1920x1080.jpg
+
+## Formatos recomendados:
+- WebP para melhor compressão
+- PNG para imagens com transparência
+- JPG para fotografias
+- SVG para ícones e ilustrações
+
+## Exemplo de uso no componente Vue:
+```vue
+<img 
+  src="~/assets/images/sections/new-method/main-image.jpg" 
+  alt="Descrição da imagem"
+  class="w-full h-auto rounded-2xl"
+/>
+```
+
+## Otimização:
+- Comprima as imagens antes de adicionar
+- Use lazy loading quando apropriado
+- Considere diferentes tamanhos para responsividade
